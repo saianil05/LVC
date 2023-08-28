@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="./js/validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>Document</title>
+  </head>
+  <body onload="load()">
+    <header>
+      <div class="main">
+      
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/1.png" class="d-block w-100" style="height: 200px;">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/data1.jpeg" class="d-block w-100" alt="..."style="height: 200px;">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/data2.png" class="d-block w-100" alt="..."style="height: 200px;">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="contain">
+            <canvas id="myCanvas" width="425" height="100" style="border:2px solid #ffffff;">
+              Your browser does not support the HTML5 canvas tag.</canvas>
+              
+              <script>
+              var c=document.getElementById("myCanvas");
+              var ctx=c.getContext("2d");
+              ctx.font="30px Arial";
+              ctx.strokeText("LIVE VIRTUAL CLASS",50,65);
+              </script>
+            
+          </div>
+      </div>
+      
+      </div>
+    </header>
+    <nav>
+      <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="registration.html">REGISTRATION</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="result.html">LVC RESULT</a>
+        <a href="contact.html">CONTACT US</a>
+        <a><select onchange="selects()" id="aa">
+          <option value="MERN" > MERN </option>
+          <option value="MEAN" >MEAN </option>
+          <option value="MEVN" >MEVN </option>
+        </select></a>
+        <a href="test.html">TAKE TEST</a>
+        <a href="subscribe.html" onmouseover="subscription()">SUBSCRIBE US</a>
+        
+      </div>
+    </nav>
+    <div
+      class="main"
+      style="text-align: center; padding: 50px; font-size: large">
+       <marquee  style="font-size: 50px;"><u id="under">WELCOME TO WEBSITE</u></marquee> 
+      <br></br>
+      Lorem ipsum dolor, sit amet consectetur adipisicing
+      elit. Iste itaque iusto, voluptatum suscipit ab dolores quasi sint placeat
+      possimus ratione expedita vel dicta harum, aperiam explicabo. Doloremque
+      necessitatibus magni odit.
+    </div>
+    <div class="layout">
+      <h1 style="margin-left: 35vw;"><b>MOST POPULAR SITES</b></h1>
+    </br>
+      <div class="row">
+        <div class="column">
+          <a href="https://www.mongodb.com/mean-stack"><img src="./images/mean.jpg" alt="Snow" style="width:100%"></a>
+        </div>
+        <div class="column">
+          <a href="https://www.mongodb.com/menn-stack"><img src="./images/mern.png" alt="Forest" style="width:100%"></a>
+        </div>
+        <div class="column">
+          <a href="https://www.mongodb.com/mevn-stack"><img src="./images/mevn.jpg" alt="Mountains" style="width:100%"></a>
+        </div>
+      </div>
+      <div class="video">
+        
+          <iframe class="video" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          </iframe>
+          </div>
+
+  
+  
+    </div>
+    <footer>
+      <p style="color: black; text-align: center">DEVELOPED BY : ABC</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+*
+{
+  padding: 0px;
+  margin: 0px;
+}
+.topnav {
+  background-color: #1861f5;
+  overflow: hidden;
+  animation: myfirst 5s;
+
+}
+@keyframes myfirst
+{
+from {background:#1861f5;}
+to {background:rgb(0, 0, 0);
+}
+}
+#under
+{
+  animation: my 15s;
+}
+@keyframes my {
+  
+  from {text-decoration-color:#1861f5;}
+to {text-decoration-color:rgb(0, 0, 0);
+}
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+  font-size: 9px;
+}
+.carousel-item
+{
+  width: 100%;
+  height: 200px;
+}
+
+
+.topnav a:hover {
+  background-color: #2500f8;
+  color: rgb(255, 255, 255);
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #1861f5;
+  color: rgb(8, 8, 8);
+  text-align: center;
+  height: 20px;
+ 
+}
+.inline-block
+{
+ text-decoration: none;
+}
+
+/*
+ul a img{
+  display: inline;
+  height: 150px;
+  width: 150px;
+  padding: 50px 90px;
+  float: left;
+  margin-left: 50px;
+  
+}
+*/
+.map{
+  padding: 10px;
+ margin-left: 20vw;
+  height :350px;
+  width: 350px;
+  border: 2px solid black;
+  display: inline-block;
+}
+
+.video{
+  display: flex;
+  margin-bottom: 40px;
+  margin-left: 35vw;
+}
+#myCanvas
+{
+  margin-left: 30%;
+  margin-top: 5%;
+  
+}
+.container
+{
+  border: 2px solid black;
+  border-radius: 10px;
+  margin:10px 30px 50px 20px;
+}
+.gallery
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.g1
+{
+  flex: 33.33%;
+  padding: 5px;
+}
+i{
+  margin-bottom: 10px;
+}
+.i:hover{
+  box-shadow: 10px 10px 5px #888888;
+
+}
+img.partial-sepia {
+  filter: sepia(100%);
+}
+img.transparent {
+  filter: opacity(80%);
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+.video{
+  margin: auto;
+  width: 50%;
+    padding: 10px;
+}
+#carouselExample
+{
+    position: relative;
+  text-align: center;
+}
+.contain {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, -80%);
+}
+.contact
+{
+  display: flex;
+  border: 2px solid #1861f5;
+  width: 100%;
+ padding: 10px;
+ margin: 10px;
+ margin-bottom: 8vh;
+border-radius: 10px;
+ 
+  
+  
+}
+.form
+{
+ margin-left: 10vw;
+
+}
+
+
+

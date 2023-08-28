@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="./js/validate.js"></script>
+    <title>Document</title>
+    <!--<style>
+        form {
+
+border:1px solid #f1f1f1;
+
+}
+
+input[type=text], input[type=email] {
+
+width: 100%;
+
+padding: 16px 8px;
+
+
+margin: 8px 0;
+
+display: inline-block;
+
+border: 1px solid #ccc;
+
+box-sizing: border-box;
+
+}
+
+.icon {
+
+font-size: 110px;
+
+display: flex;
+
+justify-content: center;
+
+color: #4286f4;
+
+}
+
+#b1 {
+
+background-color: #4286f4;
+
+color: white;
+
+padding: 14px 0;
+
+margin: 10px 0;
+
+border: none;
+
+cursor: grab;
+
+width: 48%;
+
+}
+
+h1 {
+
+text-align:center;
+
+font-size:18;
+
+}
+
+#b1:hover {
+
+opacity: 0.8;
+
+}
+
+.formcontainer {
+
+text-align: center;
+
+margin: 24px 50px 12px;
+
+}
+
+.container {
+
+padding: 16px 0;
+
+text-align:left;
+
+}
+
+
+    </style>!-->
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f2f2f2;
+      }
+
+      .container {
+          max-width: 400px;
+          margin-top: 20px;
+          padding: 20px;
+          background-color: #ffffff;
+          border-radius: 5px;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          border-color: #0056b3;
+          background-color: rgb(88, 156, 212);
+      }
+
+      h2 {
+          text-align: center;
+      }
+
+      label {
+          display: block;
+          margin-bottom: 5px;
+      }
+
+      input[type="text"], input[type="number"] {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+      }
+
+      input[type="submit"] {
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 3px;
+          cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+          background-color: #0056b3;
+      }
+  </style>
+  </head>
+  <body>
+    
+    <header>
+      <div class="main">
+      
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/1.png" class="d-block w-100" style="height: 200px;">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/logo1.jpg" class="d-block w-100" alt="..."style="height: 200px;">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/logo2.jpg" class="d-block w-100" alt="..."style="height: 200px;">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="contain">
+            <canvas id="myCanvas" width="425" height="100" style="border:2px solid #ffffff;">
+              Your browser does not support the HTML5 canvas tag.</canvas>
+              
+              <script>
+              var c=document.getElementById("myCanvas");
+              var ctx=c.getContext("2d");
+              ctx.font="30px Arial";
+              ctx.strokeText("LIVE VIRTUAL CLASS",50,65);
+              </script>
+            
+          </div>
+      </div>
+      
+      </div>
+    </header>
+    <nav>
+      <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="registration.html">REGISTRATION</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="result.html">LVC RESULT</a>
+        <a href="contact.html">CONTACT US</a>
+        <a><select onchange="selects()" id="aa">
+          <option value="MERN" > MERN </option>
+          <option value="MEAN" >MEAN </option>
+          <option value="MEVN" >MEVN </option>
+        </select></a>
+        <a href="subscribe.html" onmouseover="subscription()">SUBSCRIBE US</a>
+      </div>
+    </nav>
+    <!--<div class="result">
+        <form name="form2">
+
+            <h1>RESULT</h1>
+
+            <div class="icon">
+
+              <i class="fas fa-user-circle"></i>
+
+            </div>
+
+            <div class="formcontainer">
+
+            <div class="container">
+
+              <label for="uname" style="margin: 20px;"><strong>Username</strong></label>
+
+              <input type="text" placeholder="Enter Username" name="txt1" >
+
+              <label for="desg" style="margin: 20px;"><strong>MATHS</strong></label>
+
+              <input type="text" placeholder="Enter Maths Marks" name="txt2" id="maths" >
+
+              <label for="mail" style="margin: 20px;"><strong>SCIENCE</strong></label>
+
+              <input type="text" placeholder="Enter Science Marks" name="txt3" id="science" >
+
+              <label for="mail" style="margin: 20px;"><strong>COMPUTER</strong></label>
+
+              <input type="text" placeholder="Enter Computer Marks" name="comp" id="computer" >
+
+              <label for="tmarks" style="margin: 20px;"><strong>TOTAL MARKS</strong></label>
+
+              <input type="text" name="txt4" id="total">
+
+              <label for="per" style="margin: 20px;"><strong>PERCENTAGE</strong></label>
+
+              <input type="text" name="txt5" id="percentage" >
+             
+              <label for="max" style="margin: 20px;"><strong>MAX SCORE</strong></label>
+
+              <input type="text" name="txt6" id="max">
+
+            </div>
+
+            <input type="button" onclick="return result()" id="b1" value="RESULT"></input>
+            
+           
+
+          </form>
+    </div>!-->
+    <div class="container">
+      <h2>Enter Marks</h2>
+      <form>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required placeholder="Enter UserName">
+
+          <label for="maths">Maths Marks:</label>
+          <input type="text" id="maths" name="maths" required placeholder="Maths Marks">
+
+          <label for="science">Science Marks:</label>
+          <input type="text" id="science" name="science" required placeholder="Science Marks">
+
+          <label for="computer">Computer Marks:</label>
+          <input type="text" id="computer" name="computer" required placeholder="Computer Marks">
+
+          <label for="total">Total Marks:</label>
+          <input type="text" id="total" name="total" readonly >
+
+          <label for="percentage">Percentage:</label>
+          <input type="text" id="percentage" name="percentage" readonly >
+
+          <label for="maxScore">Max Score:</label>
+          <input type="text" id="max" name="maxScore" required readonly>
+
+          <input type="button" value="Calculate" onclick="return result()" id="b1">
+      </form>
+  </div>
+    
+    
+    <footer>
+      <p style="color: black; text-align: center">DEVELOPED BY : ABC</p>
+    </footer>
+  </body>
+</html>
